@@ -114,3 +114,60 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+
+
+/* Tablet View (width: 768px to 991px) */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listing-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile View (width: less than 767px) */
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .listing-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .form-group,
+  .form-control {
+    width: 100%;
+  }
+}
+
+/* Extra Small Phones (<576px) */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .listing-title {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
