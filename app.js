@@ -100,3 +100,7 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
     console.log("server is listening to port 8080");
 });
+
+app.all("*", (req, res, next) => {
+  res.status(404).render("error", { message: "Page Not Found" });
+});
